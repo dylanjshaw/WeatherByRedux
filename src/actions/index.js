@@ -13,10 +13,10 @@ export function fetchWeather(city) {
   const request = axios.get(url);
   // axios returns a 'promise'
 
-  return ({
+  return {
     type: FETCH_WEATHER,
     payload: request
-  })
+  };
 }
 
 // middlewares are functions that intercept and act on actions...
